@@ -540,7 +540,7 @@ namespace Render {
             backgroundOffset *= SW    // range 0..screenwidth
 
             //floor
-            for (let y = 60; y < SH; y++) {
+            for (let y = SHHalf; y < SH; y++) {
                 let p = y - SHHalf;
                 let posZ = SH * this.viewZPos / this.tilemapScaleSize / fpx_scale;
                 let rowDistance = posZ / p;
@@ -573,7 +573,7 @@ namespace Render {
             }
 
             // Ceiling
-            if (this.ceilingMap) {
+            if (false) {
                 for (let y = 0; y < SHHalf; y++) {
                     let p = y;
                     // let posZ = SH * this.viewZPos / this.tilemapScaleSize / fpx_scale;
